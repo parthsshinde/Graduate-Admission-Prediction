@@ -3,3 +3,8 @@ numpy
 scikit-learn
 flask
 gunicorn
+jinja2
+scipy
+Werkzeug
+MarkupSafe
+itsdangerous
