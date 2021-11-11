@@ -4,13 +4,8 @@ import pickle
 
 app = Flask(__name__)
 model = pickle.load(open('new_model.pkl', 'rb'))
-
-@app.errorhandler(404)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template('404.html'), 404
     
-@app.route('/')
+@app.route('/',methods=['GET'])
 def home():
     return render_template('index.html')
 
