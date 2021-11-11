@@ -17,9 +17,6 @@ This dataset was built with the purpose of helping students in shortlisting univ
 
 In this project we use machine learning techniques to predict whether an applicant will get accepetd for the graduate program or not.
 
-<p align='center'>
-<img src='demo.gif'>
-</p>
 
 The dataset contains several parameters which are considered important during the application for Masters Programs.
 
