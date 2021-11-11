@@ -20,6 +20,10 @@ In this project we use machine learning techniques to predict whether an applica
 
 The dataset contains several parameters which are considered important during the application for Masters Programs.
 
+<p align='center'>
+<img src='Graduate Admission Predictor.gif'>
+</p>
+
 
 ## ML Model Flask-Deployment
 
