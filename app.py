@@ -9,6 +9,11 @@ model = pickle.load(open('new_model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+def starting_url():
+    status_code = flask. Response(status=201)
+    return status_code.
+app. run(host=”0.0.0.0″, port=8080)
+
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
