@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('Model/new_model.pkl', 'rb'))
+model = pickle.load(open('new_model.pkl', 'rb'))
 
 @app.errorhandler(404)
 def page_not_found(e):
