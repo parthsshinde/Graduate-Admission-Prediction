@@ -41,29 +41,3 @@ Here we will deploy Machine Learning Models production using Flask API!
 
 `templates` - This folder contains the HTML template to allow user to enter applicant details and displays the predicted result.
 
-## How to setup this project
-
-1. First clone the repo locally.
-    ```
-    git clone <repo url>
-    ```
-
-2. Create a new virtual environment in the project directory.
-    ```
-    python3 -m venv ./venv
-    ```
-
-3. Activate the virtual environment.
-    ```
-    source venv/bin/activate
-    ```
-
-4. While in the virtual environment, install required dependencies from `requirements.txt`
-    ```
-    pip install -r ./requirements.txt
-    ```
-5. Ensure that you are in the project home directory, So now we can run the web application via
-    ```
-    python app.py
-    ```
-    and navigate to http://127.0.0.1:5000/ to see it live. On this page, a user can then interact with the application and receive predictions from the trained model.
