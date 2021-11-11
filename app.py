@@ -9,10 +9,6 @@ model = pickle.load(open('new_model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
-def starting_url():
-    status_code = flask. Response(status=201)
-    return status_code.
-app. run(host=”0.0.0.0″, port=8080)
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -26,7 +22,16 @@ def predict():
 
     return render_template('index.html', prediction_text='Chance of Admition is {}%'.format(round(output[0],2)))
 
+@app.route('/predict_api',methods=['POST'])
+def predict_api():
+    '''
+    For direct API calls trought request
+    '''
+    data = request.get_json(force=True)
+    prediction = model.predict([np.array(list(data.values()))])
 
+    output = prediction[0]
+    return jsonify(output)
 
 if __name__ == "__main__":
     app.run(debug=True)
