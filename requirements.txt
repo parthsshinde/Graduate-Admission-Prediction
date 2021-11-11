@@ -1,8 +1,5 @@
 pandas
 numpy
-seaborn
-matplotlib
-jupyterthemes
 tensorflow
 scikit-learn
 flask
